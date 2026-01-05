@@ -11,7 +11,7 @@ const AboutPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         {/* 2. Kartu Developer (Personal Branding) */}
-        <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl p-8 shadow-xl flex flex-col justify-between relative overflow-hidden">
+        <div className="bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-2xl p-8 shadow-xl flex flex-col justify-between relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="text-2xl font-bold mb-1">Developed by</h2>
             <h3 className="text-4xl font-extrabold mb-4">Riri Triana</h3> {/* GANTI DENGAN NAMA ASLIMU */}

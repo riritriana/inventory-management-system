@@ -5,7 +5,7 @@ const MainLayout = () => {
   const isActive = (path: string) => location.pathname === path ? "bg-blue-700 text-white shadow-lg" : "text-blue-100 hover:bg-blue-600 hover:text-white";
 
   return (
-    <div className="flex min-h-screen bg-gray-100 font-sans">
+    <div className="flex min-h-screen bg-gray-200 font-sans">
       {/* SIDEBAR */}
       <aside className="w-64 bg-blue-800 text-white flex flex-col shadow-2xl">
         <div className="p-6 border-b border-blue-700">

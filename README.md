@@ -2,6 +2,17 @@
 
 Project ini dibuat untuk memenuhi tugas Technical Test Fullstack Developer. Selain fitur dasar CRUD yang diminta, saya menambahkan beberapa fitur tambahan  seperti validasi berlapis, pencarian real-time, dan pagination untuk meningkatkan kualitas dan keamanan aplikasi.
 
+![Dashboard Preview](assets/dashboard3.png)
+*(Tampilan Dashboard Utama dengan Statistik Real-time)*
+
+---
+
+![Dashboard Preview](assets/about.png)
+*(Tampilan Informasi)*
+
+---
+
+
 **Project Status:**
 - **Frontend & Backend:** Run Locally (Localhost).
 - **Database:** **Live on Cloud (Neon Tech PostgreSQL).** ✅
