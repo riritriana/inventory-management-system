@@ -4,7 +4,7 @@ import {
   getAllProducts, 
   updateProduct, 
   deleteProduct 
-} from '../controllers/product.controller.js';
+} from '../controllers/product.controller';
 
 const router = Router();
 

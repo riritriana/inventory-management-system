@@ -2,6 +2,15 @@
 
 Project ini dibuat untuk memenuhi tugas Technical Test Fullstack Developer. Selain fitur dasar CRUD yang diminta, saya menambahkan beberapa fitur tambahan  seperti validasi berlapis, pencarian real-time, dan pagination untuk meningkatkan kualitas dan keamanan aplikasi.
 
+**Project Status:**
+- **Frontend & Backend:** Run Locally (Localhost).
+- **Database:** **Live on Cloud (Neon Tech PostgreSQL).** ✅
+
+> **Deployment Note:**
+> Aplikasi ini dikonfigurasi menggunakan **Hybrid Setup**. Database sudah **Online (Cloud)** menggunakan Neon Tech, sedangkan aplikasi berjalan di Local Environment.
+> *Alasan: Full deployment ke Render tertunda dikarenakan kendala teknis verifikasi pembayaran (Payment Gateway) pada penyedia layanan Cloud. Namun, integrasi Database Cloud dipastikan berjalan 100% lancar.*
+
+
 ## Penjelasan Fitur
 Aplikasi ini bukan sekadar CRUD biasa. Berikut fitur-fitur advanced yang telah diimplementasikan:
 
@@ -38,7 +47,7 @@ Aplikasi menerapkan **Defense in Depth** (Pertahanan Berlapis):
 **Backend:**
 - [Node.js](https://nodejs.org/) & [Express.js](https://expressjs.com/)
 - [Prisma ORM](https://www.prisma.io/) (Database Management)
-- [PostgreSQL](https://www.postgresql.org/) (Database)
+- [PostgreSQL](https://www.postgresql.org/) (via Neon Tech)
 - [Zod](https://zod.dev/) (Schema Validation)
 
 ---
@@ -55,31 +64,23 @@ Sebelum menjalankan, pastikan di komputer Anda sudah terinstall:
 ### 1. Clone Repository
 Download source code ke komputer Anda:
 ```bash
-git clone [https://github.com/USERNAME_GITHUB_KAMU/NAMA_REPO_KAMU.git](https://github.com/USERNAME_GITHUB_KAMU/NAMA_REPO_KAMU.git)
-cd NAMA_REPO_KAMU
+git clone https://github.com/riritriana/inventory-management-system.git
+cd NAMA_REPO
 ```
-## Cara Menjalankan (Local)
 
-### 1. Setup Backend
-Masuk ke folder backend, install dependency, dan setup database.
-
+### 2. Setup Backend
+Masuk ke folder backend dan install dependency:
 ```bash
 cd antariks-backend
 npm install
 ```
 
-Konfigurasi .env: Pastikan file .env sudah diisi dengan kredensial PostgreSQL :
+PENTING: Konfigurasi .env Buat file .env baru di dalam folder antariks-backend, lalu isi dengan kode di bawah ini (Database URL ini mengarah ke Cloud Database yang sudah saya siapkan):
 
 ```bash
-DATABASE_URL="postgresql://postgres:PASSWORD_ANDA@localhost:5432/antariks_db?schema=public"
+DATABASE_URL="postgresql://neondb_owner:npg_Ykq1jfPd2aMD@ep-holy-sun-a145a2kf-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 
 PORT=5000
-```
-
-Migrasi Database:
-
-```bash
-npx prisma migrate dev --name init
 ```
 
 Jalankan Server:
@@ -93,7 +94,7 @@ Server berjalan di http://localhost:5000
 Buka terminal baru, masuk ke folder frontend.
 
 ```bash
-cd antariks-frontend
+cd ../antariks-frontend
 npm install
 ```
 
@@ -103,7 +104,7 @@ npm run dev
 ```
 Buka browser di http://localhost:5173
 
-Catatan: Pastikan PostgreSQL sudah menyala sebelum menjalankan backend.
-
 ---
+
+**Author:** Riri Triana
 

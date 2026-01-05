@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { prisma } from '../utils/client.js';     
-import { productSchema } from '../utils/validators.js'; 
+import { prisma } from '../utils/client';     
+import { productSchema } from '../utils/validators'; 
 
 // 1. CREATE 
 export const createProduct = async (req: Request, res: Response): Promise<void> => {
